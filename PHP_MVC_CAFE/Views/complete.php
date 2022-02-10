@@ -1,5 +1,5 @@
 <?php
-require_once('../Controllers/Connect.php');
+require_once('../Controllers/ContactsController.php');
 
 // ダイレクトアクセスがあった場合、お問い合わせページヘリダイレクトする
 $referer = $_SERVER['HTTP_REFERER']; //アクセス元ページ（ユーザー側）
@@ -17,6 +17,8 @@ $email = h($_POST['email']);
 $body = h($_POST['body']);
 // DBに登録
 $itemPost->createData($name, $kana, $tel, $email, $body);
+
+echo 'アクセス先：' . ROOT_PATH . 'Views' . $parse['path'];
 ?>
 
 <!DOCTYPE html>
@@ -25,14 +27,14 @@ $itemPost->createData($name, $kana, $tel, $email, $body);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Casteria | お問い合わせ</title>
-    <link rel="stylesheet" type="text/css" href="../public/css/base.css">
-    <link rel="stylesheet" type="text/css" href="../public/css/style.css">
+    <title>Casteria | お問い合わせが完了しました</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" />
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-    <script defer src="../public/js/index.js"></script>
+    <script defer src="../js/index.js"></script>
 </head>
 
 <body>

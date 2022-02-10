@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Casteria</title>
-    <link rel="stylesheet" type="text/css" href="../public/css/base.css">
-    <link rel="stylesheet" type="text/css" href="../public/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" />
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-    <script defer src="../public/js/index.js"></script>
+    <script defer src="../js/index.js"></script>
 </head>
 
 <body>
@@ -24,10 +24,10 @@
                         <!-- 全スライドをまとめるラッパー -->
                         <div class="swiper-wrapper">
                             <!-- 各スライド -->
-                            <div class="swiper-slide"><img class="slider" src="../public/img/restaurant.jpg"></div>
-                            <div class="swiper-slide"><img class="slider" src="../public/img/food.jpg"></div>
-                            <div class="swiper-slide"><img class="slider" src="../public/img/food2.jpg"></div>
-                            <div class="swiper-slide"><img class="slider" src="../public/img/interior.jpg"></div>
+                            <div class="swiper-slide"><img class="slider" src="../img/restaurant.jpg"></div>
+                            <div class="swiper-slide"><img class="slider" src="../img/food.jpg"></div>
+                            <div class="swiper-slide"><img class="slider" src="../img/food2.jpg"></div>
+                            <div class="swiper-slide"><img class="slider" src="../img/interior.jpg"></div>
                         </div>
 
                         <!-- ページネーションを表示する場合 -->
@@ -87,7 +87,7 @@
             <div class="col-md-6 col-xs-12 left">
                 <div class="box">
                     <h3 class="index_level3">Signature Food</h3>
-                    <img class="box-image" src="../public/img/food.jpg">
+                    <img class="box-image" src="../img/food.jpg">
                 </div>
             </div>
             <div class="col-md-6 col-xs-12 right">
@@ -99,7 +99,7 @@
         <div class="row menu scroll-block fade-block1">
             <div class="col-md-6 col-xs-12 left">
                 <h3 class="index_level3">Our Coffee</h3>
-                <img class="box-image" src="../public/img/barista.jpg">
+                <img class="box-image" src="../img/barista.jpg">
             </div>
             <div class="col-md-6 col-xs-12 right">
                 <div class="box">
@@ -111,7 +111,7 @@
             <div class="col-md-6 col-xs-12 left">
                 <div class="box">
                     <h3 class="index_level3">Our Food</h3>
-                    <img class="box-image" src="../public/img/food3.jpg">
+                    <img class="box-image" src="../img/food3.jpg">
                 </div>
             </div>
             <div class="col-md-6 col-xs-12 right">
@@ -130,7 +130,7 @@
             </div>
             <div class="col-md-6 col-xs-12 right">
                 <div class="box"></div>
-                <img class="box-image" src="../public/img/barista.jpg">
+                <img class="box-image" src="../img/barista.jpg">
             </div>
         </div>
     </div>
@@ -140,25 +140,25 @@
             <div class="address-boxes">
                 <div class="address-box">
                     <div class="image-box">
-                        <img class="restaurant-image" src="../public/img/restaurant2.jpg" />
+                        <img class="restaurant-image" src="../img/restaurant2.jpg" />
                     </div>
                     <p><i class="fas fa-map-marker-alt"></i>東京都渋谷区xxxxxx xxxxx</p>
                 </div>
                 <div class="address-box">
                     <div class="image-box">
-                        <img class="restaurant-image" src="../public/img/restaurant3.jpg" />
+                        <img class="restaurant-image" src="../img/restaurant3.jpg" />
                     </div>
                     <p><i class="fas fa-map-marker-alt"></i>千葉県松戸市xxxxx xxxxx</p>
                 </div>
                 <div class="address-box">
                     <div class="image-box">
-                        <img class="restaurant-image" src="../public/img/restaurant4.jpg" />
+                        <img class="restaurant-image" src="../img/restaurant4.jpg" />
                     </div>
                     <p><i class="fas fa-map-marker-alt"></i>神奈川県横浜市xxxxx xxxx</p>
                 </div>
                 <div class="address-box">
                     <div class="image-box">
-                        <img class="restaurant-image" src="../public/img/restaurant5.jpg" />
+                        <img class="restaurant-image" src="../img/restaurant5.jpg" />
                     </div>
                     <p><i class="fas fa-map-marker-alt"></i>埼玉県川越市xxxxx xxxx</p>
                 </div>
