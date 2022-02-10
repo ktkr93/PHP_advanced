@@ -4,8 +4,10 @@ require_once('../Controllers/ContactsController.php');
 // idのデータがPOSTされた場合の処理
 if (!empty($_POST['id'])) {
     // DBの該当行を削除
-    $controller->deleteData(h($_POST['id']));
+    $itemPost->deleteData(h($_POST['id']));
 }
+
+echo 'アクセス先：' . ROOT_PATH . 'Views' . $parse['path'];
 ?>
 
 <!DOCTYPE html>
@@ -66,8 +68,9 @@ if (!empty($_POST['id'])) {
                                 <th>メールアドレス</th>
                                 <th>お問い合わせ内容</th>
                             </tr>
-                            <?php
-                            $rows = $controller->allData();
+                            <?php // DBからデータをFetchAll 
+                            //$rows = $stmt->fetchAll(PDO::FETCH_OBJ)
+                            $rows = $itemPost->allData();
                             ?>
                             <?php foreach ($rows as $row) : ?>
                                 <form id="form" class="form" name="form" action="contact.php" method="post">

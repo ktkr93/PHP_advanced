@@ -8,6 +8,8 @@ if (!strstr($referer, $url)) {
     header("Location: contact.php");
     exit;
 }
+
+echo 'アクセス先：' . ROOT_PATH . 'Views' . $parse['path'];
 ?>
 
 <!DOCTYPE html>
