@@ -1,7 +1,5 @@
 <?php
 require_once('../Controllers/ContactsController.php');
-
-echo 'アクセス先：' . ROOT_PATH . 'Views' . $parse['path'];
 ?>
 
 <!DOCTYPE html>
@@ -10,7 +8,7 @@ echo 'アクセス先：' . ROOT_PATH . 'Views' . $parse['path'];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Casteria | お問い合わせ</title>
+    <title>Casteria | お問い合わせ内容の編集</title>
     <link rel="stylesheet" type="text/css" href="../css/base.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -30,7 +28,7 @@ echo 'アクセス先：' . ROOT_PATH . 'Views' . $parse['path'];
                         <?php
                         // GETパラメータの$idがあり、POSTデータがない場合、データを表示する
                         if (!empty($_GET['id']) && empty($_POST['id'])) {
-                            $data = $itemPost->editData($_GET['id']);
+                            $data = $controller->editData($_GET['id']);
                         }
                         // POSTがある場合（入力されたデータが送信された場合）
                         elseif (!empty($_POST)) {
@@ -42,7 +40,7 @@ echo 'アクセス先：' . ROOT_PATH . 'Views' . $parse['path'];
                             $email = h($_POST['email']);
                             $body = h($_POST['body']);
                             // DBを更新する
-                            $itemPost->updateData($id, $name, $kana, $tel, $email, $body);
+                            $controller->updateData($id, $name, $kana, $tel, $email, $body);
                         }
                         // GETパラメータの$idが空で、POSTデータがない場合、contact.phpにリダイレクト
                         // 不正アクセスの防止

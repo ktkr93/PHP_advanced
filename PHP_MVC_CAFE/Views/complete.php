@@ -16,9 +16,7 @@ $tel = h($_POST['tel']);
 $email = h($_POST['email']);
 $body = h($_POST['body']);
 // DBに登録
-$itemPost->createData($name, $kana, $tel, $email, $body);
-
-echo 'アクセス先：' . ROOT_PATH . 'Views' . $parse['path'];
+$controller->createData($name, $kana, $tel, $email, $body);
 ?>
 
 <!DOCTYPE html>
