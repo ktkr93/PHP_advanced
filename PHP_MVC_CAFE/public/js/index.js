@@ -62,7 +62,7 @@ function check() {
         alert("お名前を入力してください。");
         return false;
     }
-    if (document.form.name.value.length >= 10) {
+    if (document.form.name.value.length > 10) {
         alert("お名前を10文字以内で入力してください。");
         return false;
     }
@@ -70,7 +70,7 @@ function check() {
         alert("フリガナを入力してください。");
         return false;
     }
-    if (document.form.kana.value.length >= 10) {
+    if (document.form.kana.value.length > 10) {
         alert("フリガナを10文字以内で入力してください。");
         return false;
     }

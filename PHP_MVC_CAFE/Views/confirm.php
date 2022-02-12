@@ -46,7 +46,7 @@ if (!strstr($referer, $url)) {
                                     <?php
                                     if (empty(h($_POST['name']))) {
                                         echo 'お名前が空白です';
-                                    } elseif (mb_strlen(h($_POST['name'])) >= 10) {
+                                    } elseif (mb_strlen(h($_POST['name'])) > 10) {
                                         echo '10文字以内で入力してください';
                                     }
                                     ?>
@@ -62,7 +62,7 @@ if (!strstr($referer, $url)) {
                                     <?php
                                     if (empty(h($_POST['kana']))) {
                                         echo 'フリガナが空白です';
-                                    } elseif (mb_strlen(h($_POST['kana']) >= 10)) {
+                                    } elseif (mb_strlen(h($_POST['kana'])) > 10) {
                                         echo '10文字以内で入力してください';
                                     }
                                     ?>
