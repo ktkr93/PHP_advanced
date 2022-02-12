@@ -70,7 +70,7 @@ if (!empty($_POST['id'])) {
                             $rows = $controller->allData();
                             ?>
                             <?php foreach ($rows as $row) : ?>
-                                <form id="form" class="form" name="form" action="contact.php" method="post">
+                                <form id="form" action="contact.php" method="post">
                                     <tr>
                                         <th><?= $row->name ?></th>
                                         <th><?= $row->kana ?></th>
