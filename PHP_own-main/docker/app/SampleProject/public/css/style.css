@@ -1,0 +1,355 @@
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 20px 0 50px 0;
+    font-size: 2.6rem;
+}
+
+h3 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.6rem;
+}
+
+p {
+    font-size: 1.7rem;
+}
+
+a {
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+a:hover {
+    opacity: .4;
+    text-decoration: none;
+}
+
+body {
+    margin-top: 120px;
+}
+
+header {
+    border-bottom: 1px solid rgb(206, 206, 207);
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+}
+
+.header-container {
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container h1 {
+    font-family: 'Noto Serif JP', serif;
+    font-family: 'Sawarabi Gothic', sans-serif;
+}
+
+.header-container i {
+    margin-right: 14px;
+    color: #337AB7;
+}
+
+.header-container .menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-post {
+    border: 1px solid #337ab7;
+    border-radius: 4px;
+    background-color: #337ab7;
+    padding: 4px 10px;
+    color: #fff;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.btn-post:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #23527c;
+}
+
+.heading-nippo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading-nippo::before,
+.heading-nippo::after {
+    content: '';
+    width: 3px;
+    height: 26px;
+    background-color: #F7B339;
+}
+
+.heading-nippo::before {
+    margin-right: 30px;
+    transform: rotate(-35deg)
+}
+
+.heading-nippo::after {
+    margin-left: 30px;
+    transform: rotate(35deg)
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.wrap {
+    margin: 0 0 70px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 26px;
+}
+
+.wrap a {
+    width: calc((100% - 26px * 2) / 3);
+    display: block;
+}
+
+.item {
+    height: 200px;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 30%);
+    border-radius: 8px;
+}
+
+.item p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+}
+
+.item:not(:nth-child(3n+3)) {
+    margin-right: 2%;
+}
+
+.item:nth-child(n+4) {
+    margin-top: 30px;
+}
+
+.item:not(:nth-child(3n+3)) {
+    margin-right: 0;
+}
+
+.item:nth-child(n+2) {
+    margin-top: 30px;
+}
+
+.login h1 {
+    text-align: center;
+}
+
+.login .alert-danger {
+    margin: 40px 0 0 0;
+    color: #a94442;
+    background-color: unset;
+    border-color: unset;
+    text-align: center;
+}
+
+.post .container,
+.edit .container {
+    width: 900px;
+}
+
+form {
+    /* width: 540px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+button {
+    width: 120px;
+}
+
+
+/* 新規投稿ページ */
+
+.post-complete-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.post-form {
+    width: 540px;
+}
+
+
+/* 会員登録 */
+
+.signup h3 {
+    text-align: center;
+}
+
+.signup .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup .col-sm-9 {
+    width: 300px;
+    padding: 0;
+}
+
+.signup .form-text {
+    text-align: center;
+}
+
+.signup .signup-complete-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* ログイン */
+
+.col-sm-3 {
+    width: 100%;
+}
+
+.col-sm-9 {
+    width: 100%;
+}
+
+
+/* マイページ */
+
+.post_item_menu {
+    margin: 0 0 4px 0;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+.post-item-width {
+    width: 100%;
+}
+
+.mypage .wrap a {
+    width: initial;
+    display: block;
+}
+
+.heading-mypage {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.heading-mypage::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    top: 42px;
+}
+
+.heading-nippo-list {
+    display: flex;
+    align-items: center;
+}
+
+.heading-nippo-list::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 22px;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-color: #F7B339;
+}
+
+.heading-support-fee-archive::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 22px;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-color: #1DB902;
+}
+
+.mypage_form,
+.support_fee_width {
+    width: calc((100% - 26px * 2) / 3);
+}
+
+.mypage_delete_btn {
+    border: none;
+    background: none;
+    color: #337ab7;
+    width: auto;
+}
+
+.mypage_delete_btn:hover {
+    color: #23527c;
+    text-decoration: underline;
+}
+
+
+/* 日報表示ページ */
+
+.support_fee_amount {
+    display: flex;
+    justify-content: end;
+    gap: 12px;
+}
+
+.support_fee_amount_item {
+    display: inline-block;
+    padding: 4px 12px;
+    border: 1px solid #337ab7;
+    font-weight: bold;
+}
+
+
+/* サポートフィーページ */
+
+.support_fee_flex {
+    flex-direction: column;
+}
+
+.col-md-12 {
+    text-align: center;
+}
+
+.support_fee_text {
+    font-weight: bold;
+    color: #337ab7;
+}
+
+
+/* エラー画面 */
+
+.error_text {
+    margin: 100px;
+}
