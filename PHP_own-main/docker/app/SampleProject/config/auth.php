@@ -15,7 +15,7 @@ return [
 
     'defaults' => [
         'guard' => 'web',
-        'passwords' => 'users',
+        'passwords' => 'user_profiles',
     ],
 
     /*
@@ -38,7 +38,12 @@ return [
     'guards' => [
         'web' => [
             'driver' => 'session',
-            'provider' => 'users',
+            'provider' => 'user_profiles',
+        ],
+        'api' => [
+            'driver' => 'token',
+            'provider' => 'user_profiles', // usersからaccountsに変更
+            'hash' => false,
         ],
     ],
 
@@ -60,11 +65,14 @@ return [
     */
 
     'providers' => [
-        'users' => [
+        // 'users' => [
+        //    'driver' => 'eloquent',
+        //    'model' => App\Models\User::class,
+        // ],
+        'user_profiles' => [
             'driver' => 'eloquent',
-            'model' => App\Models\User::class,
+            'model' => App\Models\UserProfile::class,
         ],
-
         // 'users' => [
         //     'driver' => 'database',
         //     'table' => 'users',
@@ -87,8 +95,14 @@ return [
     */
 
     'passwords' => [
-        'users' => [
-            'provider' => 'users',
+        // 'users' => [
+        //    'provider' => 'users',
+        //    'table' => 'password_resets',
+        //    'expire' => 60,
+        //    'throttle' => 60,
+        // ],
+        'user_profiles' => [
+            'provider' => 'user_profiles',
             'table' => 'password_resets',
             'expire' => 60,
             'throttle' => 60,
