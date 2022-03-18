@@ -9,6 +9,7 @@ use App\Models\PostDatum;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 use Validater;
+use App\Jobs\SendThanksMail;
 
 class UserController extends Controller
 {
@@ -91,6 +92,10 @@ class UserController extends Controller
 
         // 二重送信防止
         $request->session()->regenerateToken();
+
+        // 非同期でメール送信
+        // dd($input, $userEmail);
+        SendThanksMail::dispatch($input);
 
         return view("user/complete", ["input" => $input]);
     }
